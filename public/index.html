@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web App - Frontend & Backend Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 Basic Web App</h1>
+            <p class="subtitle">Frontend ↔️ Backend Connection Demo</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Connection Status -->
+            <section class="status-section">
+                <h2>Connection Status</h2>
+                <div id="connection-status" class="status-indicator">
+                    <div class="loading">Checking connection...</div>
+                </div>
+            </section>
+
+            <!-- API Test Buttons -->
+            <section class="api-section">
+                <h2>API Tests</h2>
+                <div class="button-group">
+                    <button id="health-check" class="btn btn-primary">Health Check</button>
+                    <button id="get-data" class="btn btn-secondary">Get Data</button>
+                    <button id="post-data" class="btn btn-success">Send POST</button>
+                </div>
+            </section>
+
+            <!-- Results Display -->
+            <section class="results-section">
+                <h2>API Response</h2>
+                <div id="api-response" class="response-container">
+                    <p class="placeholder">Click any button above to test the API connection</p>
+                </div>
+            </section>
+
+            <!-- System Info -->
+            <section class="info-section">
+                <h2>System Information</h2>
+                <div id="system-info" class="info-container">
+                    <div class="info-item">
+                        <strong>Frontend:</strong> Vanilla HTML/CSS/JavaScript
+                    </div>
+                    <div class="info-item">
+                        <strong>Backend:</strong> Node.js + Express.js
+                    </div>
+                    <div class="info-item">
+                        <strong>Status:</strong> <span id="app-status">Loading...</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Last Updated:</strong> <span id="last-updated">-</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Basic Web App - Ready for VPS Deployment</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
